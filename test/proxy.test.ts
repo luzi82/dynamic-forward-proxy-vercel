@@ -3,7 +3,7 @@ import { createHmac } from "node:crypto";
 import test from "node:test";
 import { forwardedRequestHeaders, forwardedResponseHeaders } from "../src/headers.ts";
 import { canonicalString, sign } from "../src/sign.ts";
-import { handleProxy, type ProxyEnv } from "../middleware.ts";
+import { handleProxy, type ProxyEnv } from "../src/proxy.ts";
 import {
   HEADER_SIGNATURE,
   HEADER_TARGET_HOST,

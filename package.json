@@ -2,9 +2,11 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "bundle": "esbuild src/proxy.ts --bundle --platform=node --format=esm --outfile=middleware.js",
     "test": "tsx --test test/proxy.test.ts"
   },
   "devDependencies": {
+    "esbuild": "^0.25.12",
     "tsx": "^4.20.6"
   }
 }

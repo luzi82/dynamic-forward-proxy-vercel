@@ -1,5 +1,5 @@
-import { decideHost, parseAllowlist } from "./src/host.ts";
-import { forwardedRequestHeaders, forwardedResponseHeaders } from "./src/headers.ts";
+import { decideHost, parseAllowlist } from "./host.ts";
+import { forwardedRequestHeaders, forwardedResponseHeaders } from "./headers.ts";
 import {
   HEADER_SIGNATURE,
   HEADER_TARGET_HOST,
@@ -7,7 +7,7 @@ import {
   canonicalString,
   signaturesMatch,
   timestampFresh,
-} from "./src/sign.ts";
+} from "./sign.ts";
 
 export const config = {
   runtime: "nodejs",
