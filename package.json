@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsx --test test/proxy.test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.6"
+  }
+}
